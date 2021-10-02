@@ -16,4 +16,4 @@ Para moverse entre ramas con git, basta hacer "git switch nombre-de-rama" desde 
   
   
   
-[Documentación sobre eventos] (https://developer.android.com/guide/topics/ui/ui-events#java)
+[Documentación sobre eventos](https://developer.android.com/guide/topics/ui/ui-events#java)
