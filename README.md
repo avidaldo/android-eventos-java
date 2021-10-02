@@ -13,3 +13,7 @@ El proyecto tienes varias ramas (branches) para poder comparar los distintos mod
   
   
 Para moverse entre ramas con git, basta hacer "git switch nombre-de-rama" desde el terminal de git en el directorio del repositorio, una vez este ha sido clonado.
+  
+  
+  
+[Documentación sobre eventos] (https://developer.android.com/guide/topics/ui/ui-events#java)
