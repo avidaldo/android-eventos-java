@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">EventosJava</string>
-    <string name="o1_receptor_de_eventos">Receptor de eventos</string>
-    <string name="o2_clase_listener">Listener personalizado</string>
-    <string name="o3_clase_anonima">Clase anónima</string>
+    <string name="activity_as_listener">La activity es el Listener</string>
 </resources>
