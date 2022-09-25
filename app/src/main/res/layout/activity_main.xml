@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<!-- He cambiado a LinearLayout por ser más simple ya que solo voy a apilar botones -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_to_metodo_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/receptor_de_eventos" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- El mismo elemento, pero de las librerías de Material Design -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_to_listener_personalizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listener_personalizado" />
+
+    <Button
+        android:id="@+id/btn_to_clase_anonima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clase_an_nima" />
+
+    <!-- El mismo elemento, pero de las librerías de Material Design -->
+    <Button
+        android:id="@+id/btn_to_lambda"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lambda" />
+
+    <Button
+        android:id="@+id/btn_to_activity_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_como_listener" />
+
+</LinearLayout>
