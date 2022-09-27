@@ -9,22 +9,21 @@
 
     <Button
         android:id="@+id/btn_to_metodo_xml"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_red_dark"
-        android:text="@string/receptor_de_eventos" />
-
+        android:text="@string/metodo_xml" />
 
     <!-- El mismo elemento, pero de las librerías de Material Design -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_to_listener_personalizado"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/listener_personalizado" />
 
     <Button
         android:id="@+id/btn_to_clase_anonima"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/clase_an_nima" />
 
@@ -32,13 +31,13 @@
     <Button
         android:id="@+id/btn_to_lambda"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/lambda" />
 
     <Button
         android:id="@+id/btn_to_activity_listener"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/activity_como_listener" />
 

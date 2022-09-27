@@ -1,15 +1,14 @@
 <resources>
     <string name="app_name">Eventos En Java</string>
-    <string name="receptor_de_eventos">Receptor de eventos</string>
+    <string name="metodo_xml">Metodo XML</string>
     <string name="listener_personalizado">Listener personalizado</string>
     <string name="clase_an_nima">Clase anónima</string>
-    <string name="lambda">Lambda</string>
+    <string name="lambda" translatable="false">Lambda</string>
     <string name="activity_como_listener">Activity como listener</string>
     <string name="saludar">Salúdame</string>
     <string name="escribe_tu_nombre">Escribe tu nombre</string>
     <string name="hola_coma">"Hola, "</string>
-    <string name="metodo_xml">NO USAR!</string>
     <string name="saluda_nuevo">Salúdame de nuevo</string>
-    <string name="clase_anonima">Clase anónima</string>
+    <string name="clase_anonima">Clase Anónima</string>
     <string name="activity_as_listener">La activity es el Listener</string>
 </resources>

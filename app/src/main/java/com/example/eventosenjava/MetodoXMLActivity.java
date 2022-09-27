@@ -26,7 +26,7 @@ public class MetodoXMLActivity extends AppCompatActivity {
      * DEPRECATED (Obsoleto):
      * https://developer.android.com/reference/android/R.attr#onClick
      */
-    public void onClick(View view) { // el método recibe como parámetro la View sobre la que se hizo el click (el botón)
+    public void miMetodoOnClick(View view) { // el método recibe como parámetro la View sobre la que se hizo el click (el botón)
 
         // Cambiando el texto del TextView con el contenido del EditText
         textView.setText(getString(R.string.hola_coma) + editText.getText());
@@ -35,5 +35,6 @@ public class MetodoXMLActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.metodo_xml, Toast.LENGTH_SHORT).show();
         /* El contexto es this, ya que al pertenecer el método onClick a la Activity, ésta es el contexto. */
     }
+
 
 }

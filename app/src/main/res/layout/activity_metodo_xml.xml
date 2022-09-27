@@ -17,8 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button" />
 
-    <!-- Button con receptor de eventos declarado con atributo android:onClick
-    Obsoleta:
+    <!-- Button con el método que manejará el evento onClick
+    declarado con atributo android:onClick
+    Obsoleto:
     https://developer.android.com/reference/android/R.attr#onClick -->
     <Button
         android:id="@+id/button"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="@string/saludar"
 
-        android:onClick="onClick"
+        android:onClick="miMetodoOnClick"
 
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
