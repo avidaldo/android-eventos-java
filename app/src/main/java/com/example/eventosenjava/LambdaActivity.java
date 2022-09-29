@@ -44,13 +44,17 @@ public class LambdaActivity extends AppCompatActivity {
         Cuando se implementa una clase anónima, el propio IDE sugiere cambiarla por una lambda. */
 
         boton.setOnClickListener(v -> {
-            tv.setText(getString(R.string.hola_coma) + et.getText());
-            ((Button) v).setText(R.string.saluda_nuevo);
+
+            if (!et.getText().toString().isEmpty()) {
+                tv.setText(getString(R.string.hola_coma) + et.getText());
+                ((Button) v).setText(R.string.saluda_nuevo);
+            } else {
+                Toast.makeText(this, R.string.error_no_name, Toast.LENGTH_SHORT).show();
+                /* Al pasar directamente una función como objeto, no estamos en otra clase sino directamente
+                en la Activity. */
+            }
 
 
-            Toast.makeText(this, R.string.lambda, Toast.LENGTH_SHORT).show();
-            /* Al pasar directamente una función como objeto, no estamos en otra clase sino directamente
-            en la Activity. */
         });
 
     }

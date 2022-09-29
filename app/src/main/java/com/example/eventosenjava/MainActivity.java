@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button b1 = findViewById(R.id.btn_to_metodo_xml);
 
 
-        /** Para movernos entre activities, será necesario usar Intents.
+        /** Para movernos entre activities, será necesario usar Intents explicitos.
          Instanciamos un objeto Intent, una abstracción de la intención de cambiar de actividad.
          Su constructor recibe como argumentos:
            - El contexto de partida: la activity en que está.

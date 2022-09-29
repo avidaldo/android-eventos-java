@@ -71,4 +71,5 @@ public class WithCustomListenerActivity extends AppCompatActivity {
 // El contexto puede ser accesible desde la vista que se recibe como parámetro.
 // La linea sería mejor así:
 tv.setText(v.getContext().getString(R.string.hola_coma) + et.getText());
+tv.setText(getParent().getString(R.string.hola_coma) + et.getText());
  */

@@ -35,7 +35,7 @@ public class ListenerIsActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         tv.setText(getString(R.string.hola_coma) + et.getText());
         ((Button) v).setText(R.string.saluda_nuevo);
-        Toast.makeText(this, R.string.activity_as_listener, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.activity_como_listener, Toast.LENGTH_SHORT).show();
         /* Permite acceso directo al contexto (la activity) */
     }
 

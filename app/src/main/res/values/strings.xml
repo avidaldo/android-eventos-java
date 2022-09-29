@@ -9,6 +9,5 @@
     <string name="escribe_tu_nombre">Escribe tu nombre</string>
     <string name="hola_coma">"Hola, "</string>
     <string name="saluda_nuevo">Salúdame de nuevo</string>
-    <string name="clase_anonima">Clase Anónima</string>
-    <string name="activity_as_listener">La activity es el Listener</string>
+    <string name="error_no_name">ERROR: Debes introducir un nombre</string>
 </resources>
