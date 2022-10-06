@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ClaseAnonimaActivity extends AppCompatActivity {
+public class Ej04ClaseAnonimaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class ClaseAnonimaActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) { // el método recibe como parámetro la View sobre la que se hizo el click (el botón)
 
-                        tv.setText(ClaseAnonimaActivity.this.getString(R.string.hola_coma) + et.getText());
+                        tv.setText(Ej04ClaseAnonimaActivity.this.getString(R.string.hola_coma) + et.getText());
                         ((Button) view).setText(R.string.saluda_nuevo);
 
-                        Toast.makeText(ClaseAnonimaActivity.this, R.string.clase_an_nima, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Ej04ClaseAnonimaActivity.this, R.string.clase_an_nima, Toast.LENGTH_SHORT).show();
             /* No estamos directamente dentro de la Activity, sino del listener (la clase anónima).
             El contexto es la enclosing class */
                     }
