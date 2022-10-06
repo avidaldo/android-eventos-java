@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main); // Setea la vista a partir del fichero activity_main.xml
 
 
-        // Busca objeto con id "button01" en clase R (autogenerada a partir de los xml)
+        // Busca objeto con id "btn_to_metodo_xml" en clase R (autogenerada a partir de los xml)
         Button b1 = findViewById(R.id.btn_to_metodo_xml);
 
 

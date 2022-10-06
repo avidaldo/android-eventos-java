@@ -17,10 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button" />
 
-    <!-- Button con el método que manejará el evento onClick
-    declarado con atributo android:onClick
-    Obsoleto:
-    https://developer.android.com/reference/android/R.attr#onClick -->
+
+    <!-- Button con el método que manejará el evento onClick declarado con atributo android:onClick
+    Obsoleto: https://developer.android.com/reference/android/R.attr#onClick -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"

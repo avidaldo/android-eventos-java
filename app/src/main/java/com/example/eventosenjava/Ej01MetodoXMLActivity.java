@@ -49,7 +49,7 @@ public class Ej01MetodoXMLActivity extends AppCompatActivity {
  * El método "getString(int)" de la clase Context (de la que hereda Activity) permite recuperar un
  * String declarado en el fichero de recursos res/values/strings.xml.
  *
- *  Todos los strings de nuestra aplicación deben estar siempre en ficheros de recursos para poder,
- *  por ejemplo, tener versiones en distintos idiomas que cambien acorde a la configuración del
- *  sistema.
+ * Todos los strings de nuestra aplicación deben estar siempre en ficheros de recursos para poder,
+ * por ejemplo, tener versiones en distintos idiomas que cambien acorde a la configuración del
+ * sistema.
  */

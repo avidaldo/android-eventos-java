@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.example.eventosenjava.R;
 
 /* Clase que implemente la interfaz OnClickListener, que obliga a sobreescribir el método onClick */
-public class CustomOnClickListener implements View.OnClickListener {
+class CustomOnClickListener implements View.OnClickListener {
     TextView tv;
     EditText et;
 

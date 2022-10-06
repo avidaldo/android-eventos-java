@@ -10,5 +10,5 @@
     <string name="hola_coma">"Hello, "</string>
     <string name="saluda_nuevo">Say hello again</string>
     <string name="error_no_name">ERROR: You must write a name</string>
-    <string name="listener_personalizado_inner">3. Custom Listener Inner Class</string>
+    <string name="listener_personalizado_inner">3. Custom Listener in Inner Class</string>
 </resources>
