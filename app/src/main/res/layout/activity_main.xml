@@ -21,6 +21,12 @@
         android:layout_height="wrap_content"
         android:text="@string/listener_personalizado" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_to_listener_personalizado_inner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/listener_personalizado_inner" />
+
     <Button
         android:id="@+id/btn_to_clase_anonima"
         android:layout_width="300dp"

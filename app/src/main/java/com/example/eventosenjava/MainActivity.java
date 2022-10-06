@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.eventosenjava.ej02_with_custom_listener.Ej02WithCustomListenerActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -39,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         /* Haciendo lo mismo con el resto de botones: */
 
         findViewById(R.id.btn_to_listener_personalizado).setOnClickListener(
-                v -> startActivity(new Intent(this, Ej03WithCustomListenerActivity.class)));
+                v -> startActivity(new Intent(this, Ej02WithCustomListenerActivity.class)));
+        findViewById(R.id.btn_to_listener_personalizado_inner).setOnClickListener(
+                v -> startActivity(new Intent(this, Ej03WithInnerCustomListenerActivity.class)));
         findViewById(R.id.btn_to_clase_anonima).setOnClickListener(
                 v -> startActivity(new Intent(this, Ej04ClaseAnonimaActivity.class)));
         findViewById(R.id.btn_to_lambda).setOnClickListener(

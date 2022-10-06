@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Ej03WithCustomListenerActivity extends AppCompatActivity {
+public class Ej03WithInnerCustomListenerActivity extends AppCompatActivity {
     private EditText et;
     private TextView tv;
 
@@ -48,7 +48,7 @@ public class Ej03WithCustomListenerActivity extends AppCompatActivity {
 
             ((Button) v).setText(R.string.saluda_nuevo);
 
-            Toast.makeText(Ej03WithCustomListenerActivity.this, R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
+            Toast.makeText(Ej03WithInnerCustomListenerActivity.this, R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
             //Toast.makeText(getParent(), R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
             /* El contexto es el de la actividad: la enclosing class, que es también la clase padre (getParent()). */
         }

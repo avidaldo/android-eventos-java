@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Java Events</string>
-    <string name="metodo_xml">XML Methods</string>
-    <string name="listener_personalizado">Custom Listener</string>
-    <string name="clase_an_nima">Anonimous Class</string>
-    <string name="activity_como_listener">Activity as Listener</string>
+    <string name="metodo_xml">1. XML Methods</string>
+    <string name="listener_personalizado">2. Custom Listener</string>
+    <string name="clase_an_nima">4. Anonimous Class</string>
+    <string name="activity_como_listener">6.  Activity as Listener</string>
     <string name="saludar">Say hello</string>
     <string name="escribe_tu_nombre">Insert your name</string>
     <string name="hola_coma">"Hello, "</string>
     <string name="saluda_nuevo">Say hello again</string>
     <string name="error_no_name">ERROR: You must write a name</string>
+    <string name="listener_personalizado_inner">3. Custom Listener Inner Class</string>
 </resources>
