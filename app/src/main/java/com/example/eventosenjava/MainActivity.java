@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button b1 = findViewById(R.id.btn_to_metodo_xml);
 
 
-        /** Para movernos entre activities, será necesario usar Intents explicitos.
+        /** Para movernos entre activities (1), será necesario usar Intents explicitos.
          Instanciamos un objeto Intent, una abstracción de la intención de cambiar de actividad.
          Su constructor recibe como argumentos:
            - El contexto de partida: la activity en que está.
@@ -47,4 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 v -> startActivity(new Intent(this, ListenerIsActivity.class)));
 
     }
+
 }
+
+/** (1) Para crear una nueva activity: (File > New > Activity > Empty Activity). */
