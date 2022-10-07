@@ -13,7 +13,14 @@
         android:theme="@style/Theme.EventosEnJava"
         tools:targetApi="31">
         <activity
-            android:name=".Ej06ListenerIsActivity"
+            android:name=".Ej07ListenerIsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Ej06VersionFinalActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

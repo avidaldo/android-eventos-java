@@ -20,23 +20,18 @@ public class Ej04ClaseAnonimaActivity extends AppCompatActivity {
         EditText et = findViewById(R.id.editText);
         Button boton = findViewById(R.id.button);
 
+        /* Implementación usando una clase anónima. */
 
-        /** Implementación usando una clase anónima. */
-
-        // El listener se instancia (new) a partir de una clase anónima
-        // Implementando directamente los métodos que exige este interfaz:
-        // Se sobreescribe el método onClick del escuchador
-        boton.setOnClickListener(  // instanciamos un objeto que implementa el interfaz escuchador OnClickListener
+        boton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) { // el método recibe como parámetro la View sobre la que se hizo el click (el botón)
-
+                    public void onClick(View view) {
                         tv.setText(Ej04ClaseAnonimaActivity.this.getString(R.string.hola_coma) + et.getText());
                         ((Button) view).setText(R.string.saluda_nuevo);
-
-                        Toast.makeText(Ej04ClaseAnonimaActivity.this, R.string.clase_an_nima, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Ej04ClaseAnonimaActivity.this, R.string.clase_an_nima,
+                                Toast.LENGTH_SHORT).show();
             /* No estamos directamente dentro de la Activity, sino del listener (la clase anónima).
-            El contexto es la enclosing class */
+            El contexto es la enclosing class. */
                     }
                 }
         );

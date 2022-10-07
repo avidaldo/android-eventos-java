@@ -25,12 +25,9 @@ public class Ej02WithCustomListenerActivity extends AppCompatActivity {
 
         Button boton = findViewById(R.id.button);
 
-
         /** Creación de clase que implementa el listener. Estilo clásico Java. Es raro hacerlo así ya que no
          tiene mucho sentido tener un clase solo para eso. Generas ficheros innecesariamente.
-         Simplemente es importante comprenderlo como paso previo para comprender el uso de
-         * clases anónimas (Ej04). */
-
+         Simplemente es importante comprenderlo como paso previo para comprender el uso de clases anónimas (Ej04). */
 
         /* Se asigna un escuchador OnClickListener; objeto que contiene el método al que se llamará
         ante el evento de pulsar en el botón. De este modo, el objeto boton tendrá un

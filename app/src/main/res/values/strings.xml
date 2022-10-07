@@ -2,13 +2,23 @@
     <string name="app_name">Eventos En Java</string>
     <string name="metodo_xml">1. Metodo XML</string>
     <string name="listener_personalizado">2. Listener personalizado</string>
+    <string name="listener_personalizado_inner">3. Listener personalizado en Inner Class</string>
     <string name="clase_an_nima">4. Clase anónima</string>
     <string name="lambda" translatable="false">5. Lambda</string>
-    <string name="activity_como_listener">6. Activity como listener</string>
+    <string name="vfinal">6. Versión final</string>
+    <string name="activity_como_listener">7. Activity como listener</string>
+
     <string name="saludar">Salúdame</string>
     <string name="escribe_tu_nombre">Escribe tu nombre</string>
+
     <string name="hola_coma">"Hola, "</string>
+    <string name="hola_placeholder">"Hola, %1$s"</string>
+
+    <!--
+    https://developer.android.com/guide/topics/resources/string-resource#formatting-strings
+    https://developer.android.com/reference/java/util/Formatter.html
+    -->
+
     <string name="saluda_nuevo">Salúdame de nuevo</string>
     <string name="error_no_name">ERROR: Debes introducir un nombre</string>
-    <string name="listener_personalizado_inner">3. Listener personalizado en Inner Class</string>
 </resources>

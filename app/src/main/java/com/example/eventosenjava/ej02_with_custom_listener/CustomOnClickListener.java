@@ -26,22 +26,17 @@ class CustomOnClickListener implements View.OnClickListener {
 
 
     /**
-     * Método que saltará ante el evento de un click sobre el elemento.
-     *
+     * Método que saltará ante el evento de pulsar sobre el elemento.
      * @param vista referencia la vista (1) que lanzó el evento (sobre la que se hizo click)
      */
     @Override
     public void onClick(View vista) {
 
-        // Cambiando el texto del TextView con el contenido del EditText
         tv.setText(vista.getContext().getString(R.string.hola_coma) + et.getText()); // (2)
 
-        /* Si queremos modificar el texto del propio botón necesitamos castear a su subclase Button
-        ya que no toda view tiene un campo text. (Button, como toda vista, lo es por heredar de la clase View) */
-        ((Button) vista).setText(R.string.saluda_nuevo);
+        ((Button) vista).setText(R.string.saluda_nuevo); // (3)
 
         Toast.makeText(vista.getContext(), R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
-        /* Podemos usar el contexto de la vista, que es la activity que la contiene. */
     }
 }
 
@@ -56,5 +51,11 @@ class CustomOnClickListener implements View.OnClickListener {
  * Para poder acceder al recurso necesitaremos acceder al contexto a través de la vista que se recibe
  * como parámetro y que sí pertenece ya al contexto de la activity (desde que se cargó en esta al
  * llamar a setContentView).
+ *
+ *
+ * (3) Si queremos modificar el texto del propio botón necesitamos castear a su subclase Button
+ * ya que no toda view tiene un campo text. Las vistas que tienen un campo text son los TextView.
+ * Button, como toda vista, lo es por heredar de la clase View: Button hereda de TextView, que
+ * hereda de View.
  *
  */

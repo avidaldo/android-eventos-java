@@ -24,7 +24,6 @@ public class Ej03WithInnerCustomListenerActivity extends AppCompatActivity {
 
         Button boton = findViewById(R.id.button);
 
-
         boton.setOnClickListener(new CustomOnClickListener());
     }
 
@@ -43,20 +42,25 @@ public class Ej03WithInnerCustomListenerActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            // Cambiando el texto del TextView con el contenido del EditText
             tv.setText(getString(R.string.hola_coma) + et.getText()); // (1)
 
             ((Button) v).setText(R.string.saluda_nuevo);
 
             Toast.makeText(Ej03WithInnerCustomListenerActivity.this, R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
-            //Toast.makeText(getParent(), R.string.listener_personalizado, Toast.LENGTH_SHORT).show();
-            /* El contexto es el de la actividad: la enclosing class, que es también la clase padre (getParent()). */
+            //Toast.makeText(getParent(), R.string.listener_personalizado, Toast.LENGTH_SHORT).show(); // (2)
         }
     }
 
 }
 
-/**
+/*
  * (1) Ahora podemos volver a llamar directamente al método getString ya que estamos dentro del scope (ámbito) de
  * visibilidad de la activity.
+ *
+ * (2) El contexto es el de la actividad: la enclosing class, que es también la clase padre.
+ * Se le puede llamar directamente pero al estar en una clase intena no se puede usar this (que sería
+ * una referencia a la instancia de CustomOnClickListener sino con el this de la clase padre.
+ * También se podría llamar al método getParent() que devuelve directamente una referencia a dicho objeto
+ * de la clase padre.
+ *
  */

@@ -9,9 +9,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Ej06ListenerIsActivity extends AppCompatActivity implements View.OnClickListener {
-    /* También se puede implementar la interfaz-listener en la propia Activity, aunque es poco
-    habitual. Normalmente no es la mejor solución. */
+public class Ej07ListenerIsActivity extends AppCompatActivity implements View.OnClickListener {
+    /* También se puede implementar la interfaz-listener en la propia Activity, aunque puede confundir,
+     ya que rompe el Principio de responsabilidad única
+    (https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica).
+    Normalmente no es la mejor solución. Sin embargo, fue una práctica habitual en algún tiempo y
+    aún pueden encontrarse códigos que lo utilizan.
+    */
 
     TextView tv;
     EditText et;

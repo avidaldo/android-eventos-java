@@ -33,16 +33,23 @@
         android:layout_height="wrap_content"
         android:text="@string/clase_an_nima" />
 
-    <!-- El mismo elemento, pero de las librerías de Material Design -->
     <Button
         android:id="@+id/btn_to_lambda"
-        android:backgroundTint="@android:color/holo_green_dark"
+        android:backgroundTint="@android:color/holo_green_light"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/lambda" />
 
     <Button
+        android:id="@+id/btn_to_final"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vfinal" />
+
+    <Button
         android:id="@+id/btn_to_activity_listener"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/activity_como_listener" />
